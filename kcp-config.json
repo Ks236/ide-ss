@@ -1,0 +1,17 @@
+{
+  "listen": ":6533",
+  "target": "127.0.0.1:80",
+  "key": "adowso55Ad",
+  "crypt": "3des",
+  "mode": "fast3",
+  "mtu": 13500,
+  "sndwnd": 5120,
+  "rcvwnd": 5120,
+  "datashard": 10,
+  "parityshard": 3,
+  "dscp": 0,
+  "nocomp": false,
+  "quiet": false,
+  "tcp": true,
+  "pprof": false
+}

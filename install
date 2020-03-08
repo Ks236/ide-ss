@@ -1,0 +1,13 @@
+apt -y install supervisor
+
+shadowsocks-server -f ss.json
+
+rinetd_bbr -f -c rinetd.conf raw eth0
+
+/usr/bin/v2ray/v2ray -config=/etc/v2ray/v2.json
+
+/kcp-server -c /opt/kcptun_config.json
+
+socks5 127.0.0.1:12948
+nohup ./server_linux_amd64 -c /path/to/server-config1.json > /path/to/1.log 2>&1 &
+v2ray install url https://www.podipod.com/3295.html
